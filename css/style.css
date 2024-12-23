@@ -1,0 +1,253 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 54px;
+  color:tomato;
+}
+
+h4 {
+  font-size: 15px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 15px;
+  color: tomato;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+}
+.btn{
+  border: none;
+  outline: none;
+  z-index: 2;
+  position:relative;
+  width: fit-content;
+  background-color: white;
+  border-radius: 2rem;
+  bottom: 30px;
+  left: 60px;
+}
+.btn div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 30px;
+  border: 0.5px solid black;
+  border-radius: 2rem;
+  height: 40px;
+  cursor: pointer;
+}
+.btnt{
+  pointer-events: none;
+  background-color: white;
+  border: 1px transparent;
+  border-radius: 22px;
+}
+.disable{
+  pointer-events: none;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .cart {
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+.container .cart .img-box {
+  width: 100%;
+  height: 250px;
+}
+.container .cart .img-box img {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.container .cart .desc {
+  margin-left: 20px;
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .cart-ptoduct{
+    background-color:#fff;
+    height: fit-content;
+    width: 28%;
+    margin-right: 2%;
+    background-color: #fdf7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .cart-ptoduct h2{
+    margin-right:auto;
+}
+.p-info{
+    display: flex;
+    margin-right: 250px;
+    width: 100%;
+}
+.box{
+    border: 1px solid black;
+    margin: 10px 5px;
+    align-items: center;
+    position: relative;
+}
+.changQu{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 5px auto;
+}
+.changQu span{
+  background-color: tomato;
+  color: white;
+  border: solid tomato;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.changQu span:hover{
+  color: tomato;
+  background-color: white;
+}
+
+.remove{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    border: solid 2px tomato;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.remove:hover{
+    color: black;
+}
+.total{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  display: none;
+}
+.totale{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+.total h1{
+  font-weight: 800px;
+  font-size: 25px;
+  line-height: 30px;
+}
+.confirm{
+  background-color: rgba(165, 42, 42, 0.822);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+}
+.logo{
+  display: flex;
+  gap: 5;
+  margin-top: 25px;
+  display: none;
+}
+.back{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color:#80808081;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.order{
+  width: 600px;
+  height:auto;
+  background-color:white;
+  position: relative;
+  overflow-y: scroll;
+  height: 650px;
+}
+.new-order{
+  background-color: rgba(165, 42, 42, 0.822);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  height: 50px;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    
+  }
+.main{
+    display:block;
+}
+.main .cart-ptoduct{
+    width: 88%;
+    margin: auto;
+}
+}
